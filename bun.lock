@@ -5,6 +5,7 @@
       "name": "cv",
       "dependencies": {
         "@tailwindcss/vite": "^4.0.9",
+        "lucide-svelte": "^0.476.0",
         "tailwindcss": "^4.0.9",
       },
       "devDependencies": {
@@ -206,6 +207,8 @@
     "lightningcss-win32-x64-msvc": ["lightningcss-win32-x64-msvc@1.29.1", "", { "os": "win32", "cpu": "x64" }, "sha512-NygcbThNBe4JElP+olyTI/doBNGJvLs3bFCRPdvuCcxZCcCZ71B858IHpdm7L1btZex0FvCmM17FK98Y9MRy1Q=="],
 
     "locate-character": ["locate-character@3.0.0", "", {}, "sha512-SW13ws7BjaeJ6p7Q6CO2nchbYEc3X3J6WrmTTDto7yMPqVSZTUyY5Tjbid+Ab8gLnATtygYtiDIJGQRRn2ZOiA=="],
+
+    "lucide-svelte": ["lucide-svelte@0.476.0", "", { "peerDependencies": { "svelte": "^3 || ^4 || ^5.0.0-next.42" } }, "sha512-Ph6zoMWjQVJibDrR+DJoT7LR2uEKLPzzGo886OLRk+nCJZESJUvoCWXk0uE6Y9aaamaSFAdI1Cpwslgzk3YYdQ=="],
 
     "magic-string": ["magic-string@0.30.17", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.0" } }, "sha512-sNPKHvyjVf7gyjwS4xGTaW/mCnF8wnjtifKBEhxfZ7E/S8tQ0rssrwGNn6q8JH/ohItJfSQp9mBtQYuTlH5QnA=="],
 
