@@ -1,6 +1,6 @@
 <script>
   import picture from "/picture.jpg";
-  import { MapPin, Github, Mail } from "lucide-svelte";
+  import { MapPin, Github, Mail, Printer } from "lucide-svelte";
 </script>
 
 <header class="flex justify-between gap-16">
@@ -26,6 +26,15 @@
         class="flex gap-2 items-center font-geist-mono text-md text-gray-700 transition-colors hover:text-blue-800"
       >
         <Mail size={16} /> contact@bartoszbak.org
+      </a>
+      <a
+        href="#"
+        onclick={() => {
+          window.print();
+        }}
+        class="flex gap-2 items-center font-geist-mono text-md text-gray-700 transition-colors hover:text-blue-800"
+      >
+        <Printer size={16} /> print
       </a>
     </div>
   </div>
