@@ -4,11 +4,18 @@
 </script>
 
 <header class="flex justify-between gap-16">
-  <div class="flex flex-col gap-4">
+  <div class="flex flex-col gap-3">
     <p class="text-3xl font-bold">Bartosz Bak</p>
-    <p class="font-geist-mono text-lg">
-      Student and an aspiring full-stack software engineer who likes to craft
-      nice things.
+    <p class="font-geist-mono text-lg group">
+      Student and an <span
+        class="group-hover:text-blue-800 group-hover:font-medium transition-all"
+        >aspiring</span
+      >
+      full-stack
+      <span
+        class="group-hover:text-blue-800 group-hover:font-medium transition-all"
+        >software engineer</span
+      > who likes to craft nice things.
     </p>
     <p class="flex gap-2 items-center font-geist-mono text-md text-gray-500">
       <MapPin size={16} /> York, United Kingdom, UTC
@@ -27,18 +34,19 @@
       >
         <Mail size={16} /> contact@bartoszbak.org
       </a>
+      <!-- svelte-ignore a11y_invalid_attribute -->
       <a
         href="#"
         onclick={() => {
           window.print();
         }}
-        class="flex gap-2 items-center font-geist-mono text-md text-gray-700 transition-colors hover:text-blue-800"
+        class="flex gap-2 items-center font-geist-mono text-md text-gray-700 transition-colors hover:text-blue-800 print:hidden"
       >
         <Printer size={16} /> print
       </a>
     </div>
   </div>
-  <div class="flex-shrink-0 w-48 h-48 rounded-4xl">
+  <div class="flex-shrink-0 w-36 h-36 rounded-4xl mr-8">
     <img src={picture} alt="Bartosz Bak" class="rounded-4xl" />
   </div>
 </header>
