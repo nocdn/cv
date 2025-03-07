@@ -9,8 +9,9 @@
     <span
       class="group-hover:text-blue-800 group-hover:font-medium transition-all"
       >University of York</span
-    >, passionate about building web, and backend applications, using a variety
-    of modern and established technologies. I have experience with
+    >,highly technically capable, and passionate about building web, and backend
+    applications, using a variety of modern and established technologies. I have
+    experience with
     <span
       class="group-hover:text-blue-800 group-hover:font-medium transition-all"
       >Svelte, Tailwind CSS, Python, JavaScript, Flask, PostgreSQL</span
