@@ -1,7 +1,8 @@
 <main class="flex flex-col gap-4">
   <p class="text-2xl font-bold">Personal Summary</p>
-  <p class="font-geist-mono text-md group">
-    I am a first year <span
+  <p class="font-geist-mono text-[15px] group">
+    A motivated first-year
+    <span
       class="group-hover:text-blue-800 group-hover:font-medium transition-all"
       >Computer Science</span
     >
@@ -9,22 +10,22 @@
     <span
       class="group-hover:text-blue-800 group-hover:font-medium transition-all"
       >University of York</span
-    >,highly technically capable, and passionate about building web, and backend
-    applications, using a variety of modern and established technologies. I have
-    experience with
-    <span
-      class="group-hover:text-blue-800 group-hover:font-medium transition-all"
-      >Svelte, Tailwind CSS, Python, JavaScript, Flask, PostgreSQL</span
     >
-    and am comfortable with cloud platforms like
+    with skills in web and backend applications. Highly technical and proficient
+    in
     <span
       class="group-hover:text-blue-800 group-hover:font-medium transition-all"
-      >AWS, and GCP</span
+      >JavaScript, Python, SvelteKit, Tailwind CSS, Flask, Bash and PostgreSQL</span
+    >. Through personal projects, gained experience with
+    <span
+      class="group-hover:text-blue-800 group-hover:font-medium transition-all"
+      >AWS, GCP and Azure</span
+    >, and regularly uses
+    <span
+      class="group-hover:text-blue-800 group-hover:font-medium transition-all"
+      >OCI, Unix/Linux, Docker, Nginx and Git</span
     >
-    through the projects I have worked on. I also use
-    <span
-      class="group-hover:text-blue-800 group-hover:font-medium transition-all"
-      >Linux, Git and Docker</span
-    > regularly.
+    in development workflows. An agile learner, and versatile collaborator looking
+    to apply technical skills and grow as a software developer.
   </p>
 </main>
