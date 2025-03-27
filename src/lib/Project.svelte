@@ -1,11 +1,11 @@
 <script>
-  let { title, description, demo, repo, upToDate = false } = $props();
+  let { title, description, demo = "", repo, upToDate = true } = $props();
   import { BadgeCheck } from "lucide-svelte";
   let showPopover = $state(false);
 </script>
 
 <project
-  class="flex flex-col gap-2 max-w-xs border border-gray-200 rounded-xl px-3.5 py-3"
+  class="flex flex-col gap-2 border border-gray-200 rounded-xl px-3.5 py-3"
 >
   <div class="flex justify-between items-center">
     <p
@@ -14,7 +14,7 @@
       {title}
       <span
         role="tooltip"
-        class="relative"
+        class="relative {upToDate ? 'block' : 'hidden'}"
         onfocus={() => {
           showPopover = true;
         }}
@@ -51,8 +51,10 @@
         href={demo}
         target="_blank"
         rel="noopener noreferrer"
-        class="text-sm font-geist-mono text-blue-700 hover:text-blue-600"
-        >Demo</a
+        class="text-sm font-geist-mono text-blue-700 hover:text-blue-600 {demo !==
+        ''
+          ? 'block'
+          : 'hidden'}">Demo</a
       >
     </div>
   </div>
