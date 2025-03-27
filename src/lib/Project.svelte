@@ -2,6 +2,15 @@
   let { title, description, demo = "", repo, upToDate = true } = $props();
   import { BadgeCheck } from "lucide-svelte";
   let showPopover = $state(false);
+  let isLeaving = $state(false);
+
+  function handleMouseLeave() {
+    isLeaving = true;
+    setTimeout(() => {
+      showPopover = false;
+      isLeaving = false;
+    }, 200);
+  }
 </script>
 
 <project
@@ -17,19 +26,21 @@
         class="relative {upToDate ? 'block' : 'hidden'}"
         onfocus={() => {
           showPopover = true;
+          isLeaving = false;
         }}
         onmouseover={() => {
           showPopover = true;
+          isLeaving = false;
         }}
-        onmouseleave={() => {
-          showPopover = false;
-        }}
+        onmouseleave={handleMouseLeave}
       >
         <BadgeCheck class="text-blue-700" size={16} strokeWidth={2.65} />
         {#if showPopover}
           <!-- svelte-ignore node_invalid_placement_ssr -->
           <div
-            class="w-52 h-fit absolute bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-xl border border-gray-200 shadow-xl z-10 p-3 font-geist-mono text-sm animate-preview-popover-up"
+            class="w-52 h-fit absolute bottom-6 left-1/2 -translate-x-1/2 bg-white rounded-xl border border-gray-200 shadow-xl z-10 p-3 font-geist-mono text-sm {isLeaving
+              ? 'animate-preview-popover-down'
+              : 'animate-preview-popover-up'}"
           >
             <p class="text-center">
               This project is currently actively <span
