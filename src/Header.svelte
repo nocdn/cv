@@ -46,7 +46,14 @@
       </a>
     </div>
   </div>
-  <div class="flex-shrink-0 w-36 h-36 rounded-4xl mr-8">
-    <img src={picture} alt="Bartosz Bak" class="rounded-4xl" />
+  <div
+    class="flex-shrink-0 w-36 h-36 mr-8 transition-all duration-300 overflow-hidden rounded-4xl border-2 border-gray-200"
+  >
+    <img
+      src={picture}
+      alt="Bartosz Bak"
+      class="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+      style="transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);"
+    />
   </div>
 </header>

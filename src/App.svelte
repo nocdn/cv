@@ -4,6 +4,7 @@
   import Experience from "./Experience.svelte";
   import Education from "./Education.svelte";
   import Projects from "./Projects.svelte";
+  import Skills from "./Skills.svelte";
 </script>
 
 <main
@@ -14,4 +15,5 @@
   <Experience />
   <Education />
   <Projects />
+  <Skills />
 </main>
