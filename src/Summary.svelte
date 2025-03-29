@@ -1,6 +1,6 @@
 <main class="flex flex-col gap-4">
   <p class="text-2xl font-bold">Personal Summary</p>
-  <p class="font-geist-mono text-[15px] group">
+  <p class="font-geist-mono text-sm group">
     A motivated first-year
     <span
       class="group-hover:text-blue-800 group-hover:font-medium transition-all"
