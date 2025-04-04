@@ -14,7 +14,7 @@
 
   <Extra
     title="Microsoft Azure AI Hackathon"
-    description="Collaborated in a team to enhance the ad segment trimmer project with Azure AI Foundry, AI Speech and Elastic Compute. Implementing extra features like segment summaries, format conversions and an intuitive drag-and-drop frontend interface."
+    description="Enhanced the ad segment trimmer project with Azure AI Foundry, AI Speech and Elastic Compute. Implementing extra features like segment summaries, format conversions and an intuitive drag-and-drop frontend interface."
     link="https://azureaidev.devpost.com/"
   />
 
